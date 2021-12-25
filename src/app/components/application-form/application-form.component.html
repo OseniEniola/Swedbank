@@ -14,6 +14,21 @@
 
         </div>
     </div>
+    <div *ngIf="active!=5" class="header_wrap mobile">
+        <header class="header">Loan Application Form</header>
+        <div class="stepper">
+            <div class="step " [ngClass]="{'active' :active==1, 'valid': valid >= 1}" (click)="toggleActive(1)">
+                1</div>
+            <div class="step " [ngClass]="{'active' :active==2, 'valid': valid >= 2}" (click)="toggleActive(2)">
+                2</div>
+            <div class="step  " [ngClass]="{'active' :active==3, 'valid': valid >= 3}" (click)="toggleActive(3)">
+                3</div>
+            <div class="step " [ngClass]="{'active' :active==4, 'valid': valid >= 4}" (click)="toggleActive(4)">4
+            </div>
+
+
+        </div>
+    </div>
 
 
     <div class="inner_wrap">

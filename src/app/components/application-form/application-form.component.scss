@@ -85,7 +85,9 @@
       }
     }
   }
-
+.mobile{
+  display: none;
+}
   .inner_wrap {
     padding: 4%;
     padding-top: 1%;
@@ -343,4 +345,18 @@
   button:hover{
     background: rgba(243, 91, 28, 0.3);
     border-radius:4px }
+  }
+
+  @media (max-width:720px){
+    .page_content {
+      margin-top: 2%;
+      background-color: #ffffff;
+      margin-bottom: 5%;
+      .header_wrap {
+      display: none;
+      }
+    .mobile{
+      display: block;
+    }
+  }
   }
